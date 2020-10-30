@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,100;1,500&display=swap"
+		rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<script src="main.js"></script>
+
+	<title>bun bun bake shop</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
+			<!--Header navigation consistent across pages-->
+			<div class="navigation">
+				<a class="navigation-link" href="index.html">Home</a>
+				<a class="navigation-link" href="menu.html">Cinnamo Roll</a>
+				<span id="cart" class="cart">0</span><a href="cart.html"><img src="images/cart.png" alt="cart"
+						height="20px" width="24px"></a>
+			</div>
+		</div>
+		<!--Product information begins here-->
+		<div class="overview">
+
+			<div class="product-image">
+				<img id="main" src="images/product1.jpeg" class="preview">
+			</div>
+
+			<div class="description">
+				<h1 id="pageFlavor" data-flavor="Original Bun">Original Bun</h1>
+				<div class="choice-detail"> Select quantity</div>
+
+				<!--Quantity options available for order-->
+				<select id="dropdown" onchange="dropdownChange()">
+					<option value="">Please select</option>
+					<option value="Single">Single</option>
+					<option value="3-pack">3-pack</option>
+					<option value="6-pack">6-pack</option>
+					<option value="12-pack">12-pack</option>
+				</select>
+				<!--If user chooses multi-pack, they can select more flavors-->
+				<div id="flavors">
+					<div class="choice-detail">
+						You can choose more than one flavor
+					</div>
+					<table>
+						<tr>
+							<td><input class="type" type="checkbox" name="flavor" value="None">None</td>
+							<td><input class="type" type="checkbox" name="flavor" value="Suger-Milk">Suger-Milk</td>
+						</tr>
+						<tr>
+							<td><input class="type" type="checkbox" name="flavor" value="Vanilla Milk">Vanilla Milk
+							</td>
+							<td><input class="type" type="checkbox" name="flavor" value="Double Chocolate">Double
+								Chocolate</td>
+						</tr>
+					</table>
+				</div>
+				<div class="border short"></div>
+				<!--Dynamic price-->
+				<span id="price" class="price">$0.00</span>
+				<button id="add" type="button" class="secondary" onclick="addCart()">Add to cart</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		© 2020 Bun Bun Bake Shop
+	</div>
+
+</body>
+
+</html>
