@@ -16,12 +16,11 @@
 	<div class="container">
 		<div class="header">
 			<a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
-			<!--Header navigation consistent across pages-->
 			<div class="navigation">
 				<a class="navigation-link" href="index.html">Home</a>
 				<a class="navigation-link" href="menu.html">Cinnamo Roll</a>
-				<span id="cart" class="cart">0</span><a href="cart.html"><img src="images/cart.png" alt="cart"
-						height="20px" width="24px"></a>
+				<span id="cart">0</span><a class="navigation-link" href="cart.html"><img src="images/cart.png"
+						alt="cart" height="20px" width="24px"></a>
 			</div>
 		</div>
 		<!--Product information begins here-->
@@ -43,10 +42,10 @@
 					<option value="6-pack">6-pack</option>
 					<option value="12-pack">12-pack</option>
 				</select>
-				<!--If user chooses multi-pack, they can select more flavors-->
+				<!--User can chooses more than one glaze-->
 				<div id="flavors">
 					<div class="choice-detail">
-						You can choose more than one flavor
+						You can choose more than one glaze
 					</div>
 					<table>
 						<tr>
@@ -67,10 +66,6 @@
 				<button id="add" type="button" class="secondary" onclick="addCart()">Add to cart</button>
 			</div>
 		</div>
-	</div>
-
-	<div class="footer">
-		© 2020 Bun Bun Bake Shop
 	</div>
 
 </body>
