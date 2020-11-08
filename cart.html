@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en"></html>
 <html>
 
 <head>
@@ -17,26 +16,27 @@
 	<div class="cartContainer">
 		<div class="header">
 			<a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
-			<!--Header navigation consistent across pages-->
 			<div class="navigation">
 				<a class="navigation-link" href="index.html">Home</a>
 				<a class="navigation-link" href="menu.html">Cinnamo Roll</a>
-				<span id="cart" class="cart">0</span><a href="cart.html"><img src="images/cart.png" alt="cart"
-						height="20px" width="24px"></a>
+				<span id="cart">0</span><a class="navigation-link" href="cart.html"><img src="images/cart.png"
+						alt="cart" height="20px" width="24px"></a>
 			</div>
 		</div>
+
 		<div id="cart">
-			<h1>Your cart</h1>
+			<h2>CHECKOUT</h2>
+			<h1>Your basket</h1>
 			<!-- Order array populates in this div -->
 			<div id="yourOrder"></div>
 			<div class="cartCheckout">
+				<p id="checkoutNow">Your order is ready.</p>
 				<button id="checkoutButton" type="button" class="secondary">checkout</button>
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		© 2020 Bun Bun Bake Shop
-	</div>
+
+	<script src="main.js"></script>
 </body>
 <script type="text/javascript">updateCart(), checkout()</script>
 
