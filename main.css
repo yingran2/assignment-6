@@ -45,7 +45,7 @@ p {
 
 /*Establised link styles*/
 a.navigation-link {
-	padding-left: 50px;
+	padding-right: 50px;
 	font-family: karla;
 	font-size: 18px;
 	font-weight: 300;
@@ -87,7 +87,7 @@ a.navigation-link:hover, a.navigation-link:active {
 .navigation {
     vertical-align: top;
     height: 80px;      
-    line-height: 80px;    
+    line-height: 40px;    
     text-align: center;
     float: right;
 
@@ -117,7 +117,7 @@ a.navigation-link:hover, a.navigation-link:active {
 /*Main image styles*/
 .homecontent {
     height: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
    
 
@@ -335,6 +335,10 @@ td {
 
 #yourOrder {
 	margin-top: 60px;
+}
+
+.orderspace {
+	margin-top: 80px;
 }
 
 .cartCheckout {
